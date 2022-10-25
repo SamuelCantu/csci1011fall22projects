@@ -1,7 +1,21 @@
 import re
+import random
 
 # Get the answer.
-answer = "What's up, Doc?"
+pool_file = open("hangman-sample-answer-pool.txt")
+
+pool_answer = []
+
+pool_answer_line = pool_file.readline()
+
+while pool_answer_line:
+    pool_answer.append(pool_answer_line)
+
+    pool_answer_line = pool_file.readline()
+
+pool_file.close()
+
+answer = random.choice(pool_answer)
 
 answer = answer.upper()
 
