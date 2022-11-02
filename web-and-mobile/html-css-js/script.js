@@ -2,7 +2,7 @@ window.addEventListener("load", function ()
 {
     //Get click element references.
     let clickCounterElement = document.getElementById("click-counter");
-    let clcikButtonElement = document.getElementById("clcik-button");
+    let clcikButtonElement = document.getElementById("click-button");
 
     //Counter value.
     let counter = 0;
